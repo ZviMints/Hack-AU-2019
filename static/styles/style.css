@@ -26,7 +26,6 @@ a {
 }
 
 .header {
-
 }
 
 #header .ariellogo img {
@@ -36,8 +35,8 @@ a {
 }
 
 #header .ourlogo img {
-    width: 250px;
-    height: 110px;
+    width: 110px;
+    height: 130px;
     float: right;
 }
 
@@ -56,27 +55,13 @@ a {
 }
 
 #menu .selected {
-    font-weight: bold;    
+    font-weight: bold;   
 }
 
 #content {
     clear: both;
     margin: 10px;  
-}
-
-#content .submit {
-  background: #bbb;  /* fallback for old browsers */
-  -webkit-border-radius: 6;
-  -moz-border-radius: 6;
-  border-radius: 6px;
-  color: #black;
-  font-size: 15px;
-  margin:3px;
-  padding: 10px;
-}
-
-#content .submit:hover {
-  background: #eee;  /* fallback for old browsers */
+	text-align:center;
 }
 
 #footer {
@@ -95,7 +80,6 @@ a {
         padding: 5px;
         text-align: right;
         clear: both;
-        background: #ECE9E6;  /* fallback for old browsers */
         background: #ECE9E6;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

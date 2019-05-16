@@ -2,17 +2,19 @@
   <html lang = "he">
       <head>
           <meta charset="utf-8" />
+		  <meta name="viewport" content="initial-scale=1,width=devide-width">
           <title>ברוכים הבאים למערכת השעות שלכם</title>
+		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
           <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
-      </head>
+	 </head>
       <body>
         <div id="container">
           <div id="header">
-            <div class="ourlogo"><img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="our logo"/></div>
+            <div class="ourlogo"><img src="{{url_for('static', filename='logo.png')}}" alt="our logo"/></div>
             <div class="ariellogo"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ariel_University_Logo.png" alt="Ariel Logo"/></div>
           </div>
           <div id="menu">
-            <a href="" class="selected">ראשי</a>
+            <a href="./">ראשי</a>
             <a href="">מה אנחנו עושים?</a>
             <a href="">צור קשר</a>
           </div>

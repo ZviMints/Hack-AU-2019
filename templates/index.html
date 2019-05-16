@@ -4,9 +4,9 @@
              ברוכים הבאים לאתר, אפשר להכנס כאן טקסט
             </p>
             <form action="/login" method="post">
-              <input type="text" name="email" placeholder="כתובת מייל.."/>
-              <input type="text" name="password" placeholder="סיסמא.."/><br>
-              <input type="checkbox" name="remember" value="remember" checked="checked">זכור אותי בהתחברות הבאה<br>
-              <input type="submit" value="התחבר" class="submit"/> <br>
+              <input type="text" name="email" placeholder="כתובת מייל.." class="form-control" /><br>
+              <input type="password" name="password" placeholder="סיסמא.." class="form-control"/>
+              <input type="checkbox" name="remember" value="remember" checked="checked"> זכור אותי בהתחברות הבאה<br>
+              <input type="submit" value="התחבר" class="btn btn-primary btn-lg btn-block"/> <br>
             </form>
 {% endblock %}
