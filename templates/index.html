@@ -3,8 +3,9 @@
             <p>
              ברוכים הבאים לאתר, אפשר להכנס כאן טקסט
             </p>
-            <form action="/login" method="post">
-              <input type="text" name="email" placeholder="כתובת מייל.." class="form-control" /><br>
+			<script src="{{ url_for('static',filename='script.js') }}"></script>
+            <form action="/login" method="post" onsubmit="return chkform()">
+              <input type="email" name="email" placeholder="כתובת מייל.." class="form-control" /><br>
               <input type="password" name="password" placeholder="סיסמא.." class="form-control"/>
               <input type="checkbox" name="remember" value="remember" checked="checked"> זכור אותי בהתחברות הבאה<br><br>
               <input type="submit" value="התחבר" class="btn btn-primary btn-lg btn-block"/> <br>
