@@ -1,0 +1,108 @@
+body {
+    text-align: center;
+    padding: 50px;
+    background: #eee;
+    direction: rtl;
+    font-family: Arial,Verdana,'sans serif';  
+}
+#container {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.95); 
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.95);
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    resize: both;
+    overflow: auto;
+    min-width: 50px; /*suggest a min-width &amp; min-height*/
+    min-height: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+
+}
+
+#header .ariellogo img {
+    width: 95px;
+    height: 50px;
+    float: left;
+}
+
+#header .ourlogo img {
+    width: 250px;
+    height: 110px;
+    float: right;
+}
+
+#menu {
+        padding: 10px;
+        clear: both;
+        background-image: linear-gradient( 65.5deg,  rgba(23,205,205,1) -15.1%, rgba(23,25,95,1) 71.5% );
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+}
+
+#menu a {
+    color: white;
+    padding-left: 20px;
+    
+}
+
+#menu .selected {
+    font-weight: bold;    
+}
+
+#content {
+    clear: both;
+    margin: 10px;  
+}
+
+#content .submit {
+  background: #bbb;  /* fallback for old browsers */
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  color: #black;
+  font-size: 15px;
+  margin:3px;
+  padding: 10px;
+}
+
+#content .submit:hover {
+  background: #eee;  /* fallback for old browsers */
+}
+
+#footer {
+        padding: 5px;
+        text-align: right;
+        clear: both;
+        background: #ECE9E6;  /* fallback for old browsers */
+        background: #ECE9E6;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+}
+
+#footer {
+        padding: 5px;
+        text-align: right;
+        clear: both;
+        background: #ECE9E6;  /* fallback for old browsers */
+        background: #ECE9E6;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+}
+
+#footer a {
+    font-weight: bold;
+}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+            <p>
+             ברוכים הבאים לאתר, אפשר להכנס כאן טקסט
+            </p>
+            <form action="/login" method="post">
+              <input type="text" name="email" placeholder="כתובת מייל.."/>
+              <input type="text" name="password" placeholder="סיסמא.."/><br>
+              <input type="checkbox" name="remember" value="remember" checked="checked">זכור אותי בהתחברות הבאה<br>
+              <input type="submit" value="התחבר" class="submit"/> <br>
+            </form>
+{% endblock %}
