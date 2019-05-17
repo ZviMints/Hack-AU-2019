@@ -2,6 +2,7 @@ body {
     text-align: center;
     padding: 50px;
 	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	height: 100vh;
 	direction: rtl;
     font-family: Arial,Verdana,'sans serif';  
 }
@@ -89,7 +90,6 @@ text-align: right;
 }
 
 #footer {
-        padding: 5px;
         text-align: right;
         clear: both;
         background: #ECE9E6;  /* fallback for old browsers */
@@ -106,5 +106,17 @@ text-align: right;
 	float: left;
 }
 #links {
-margin-top: 10px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 5px;
+}
+
+#links .findus {
+margin-top: 5px;
+float: left;	
+}
+
+#links .bgcolors {
+float: right;	
 }

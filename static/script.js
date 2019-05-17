@@ -6,4 +6,9 @@ function chkform() {
 		return false;
 	}
 	return true;
-}  
+}
+
+function prime() {
+	let body = document.querySelector('body');
+	body.style.background = 'red';
+}
