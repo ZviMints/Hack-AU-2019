@@ -9,11 +9,11 @@
 		  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/calendar.css') }}">
 	 </head>
       <body>
-        <div id="container">
-          <div id="header">
+        <div id="header">
             <div class="ourlogo"><img src="{{url_for('static', filename='logo.png')}}" alt="our logo"/></div>
             <div class="ariellogo"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ariel_University_Logo.png" alt="Ariel Logo"/></div>
-          </div>
+        </div>
+        <div id="container">
           <div id="menu">
             <a href="./">ראשי</a>
             <a href="">מה אנחנו עושים?</a>
@@ -33,7 +33,7 @@
           </div>
         </div>
 	</div>
-		<div class="links">
+		<div id="links">
 		<a href="#"><img src="https://www.macupdate.com/images/icons256/39062.png" width="50px" height="50px"/></a>
 		</div>
       </body>
