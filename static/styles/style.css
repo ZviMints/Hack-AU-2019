@@ -119,4 +119,8 @@ float: left;
 
 #links .linksdata {
 float: right;	
+text-align:right;
+color: white;
+font-weight: bold;
+font-size: 11px;
 }
