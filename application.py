@@ -12,4 +12,4 @@ def login():
     rem = request.form.get("rem")
     if not email or not password:
     	    return render_template("failure.html")
-    return render_template("success.html",email=email)
+    return render_template("main.html",email=email)

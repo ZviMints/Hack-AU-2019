@@ -1,0 +1,56 @@
+
+#greet {
+text-align: right;	
+background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-border-radius: 4px;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+
+#nav {
+background-color: yellow;
+text-align: right;	
+margin-bottom: 10px;
+}
+
+
+/* Create four columns that floats next to each other */
+.menu {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background-color: green;
+  margin-right: 11px;
+}
+
+.right {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background-color: grey;
+  margin-right: 10px;
+}
+
+.mid {
+  float: left;
+  width: 65%;
+  padding: 10px;
+  background-color: blue;
+  margin: 0px 10px 0px 10px;
+}
+
+.left {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background-color: grey;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
