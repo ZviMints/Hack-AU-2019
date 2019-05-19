@@ -7,42 +7,42 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 -webkit-border-radius: 4px;
 border-radius: 4px;
 margin-bottom: 10px;
-}
-
-#nav {
-margin-bottom: 10px;
+padding: 10px;
 }
 
 /* Create four columns that floats next to each other */
-.menu {
-  float: left;
-  width: 20%;
+.main {
+  margin: 10px;
   padding: 10px;
-  background-color: green;
-  margin-right: 11px;
+}
+#nextprev {
+  margin-right: 370px;
 }
 
-.right {
-  float: left;
-  width: 5%;
-  padding: 10px;
-  background-color: grey;
-  margin-right: 10px;
+#title {
+font-weight: 20px;
+font-weight: bold;
 }
 
-.mid {
-  float: left;
-  width: 65%;
-  padding: 10px;
-  background-color: blue;
-  margin: 0px 10px 0px 10px;
+#task-header {
+  text-align:center;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.left {
+
+/* Create four equal columns that floats next to each other */
+.column {
   float: left;
-  width: 5%;
+  width: 100px;
   padding: 10px;
-  background-color: grey;
+  margin: 5px 10px 10px 5px;
+  text-align: center;
+  background-color: yellow;
+  border: 1px solid black;
+}
+.row {
+  margin-right: 30px;
 }
 
 /* Clear floats after the columns */
@@ -50,4 +50,25 @@ margin-bottom: 10px;
   content: "";
   display: table;
   clear: both;
+}
+
+#TasksList {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+#new-task {
+  text-align: right;
+}
+
+.TextField {
+  width: 70px;
+  height: 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
 }
