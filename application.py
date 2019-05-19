@@ -1,8 +1,7 @@
-from flask import Flask, render_template, session, redirect, url_for
+from flask import Flask, render_template, session, redirect, url_for, request
 from flask_session import Session
 from tempfile import mkdtemp
 import math 
-
 
 app = Flask(__name__)
 
