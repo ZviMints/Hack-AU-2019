@@ -46,6 +46,9 @@ font-weight: bold;
   text-align: center;
   background-color: #ffffcc;
   border-left: 6px solid #ffeb3b;
+  -webkit-box-shadow: 4px 10px 5px -9px rgba(0,0,0,0.4);
+  -moz-box-shadow: 4px 10px 5px -9px rgba(0,0,0,0.4);
+  box-shadow: 4px 10px 5px -9px rgba(0,0,0,0.4);
 }
 .row {
   margin-right: 30px;
