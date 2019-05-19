@@ -17,29 +17,7 @@
 </nav>
 <div class="main">
 <span id="title">מערכת שעות</span>
-<table class="table table-striped">
-    <thead>
-    <th id="col">
-    </th>   
-    {% for j in range(7) %} 
-    <th id="col" style="background-color: #bebebe">
-    יום ראשון
-    </th>
-    {% endfor %}
-    {% for j in range(15) %}
-    <tr>
-    <th scope="col" style="background-color: #bebebe;">
-            08:00  - 10:00
-    </th>
-        {% for j in range(7) %} 
-        <th scope="col">
-            text
-        </th>
-        {% endfor %}
-    </tr>
-    {% endfor %}
-    </thead>
-</table>
+<div id="myDynamicTable"></div>
 </div>
 <div class="alert alert-primary" role="alert">
     נקודות זכות : 0  שעות שבועיות : 0 
@@ -58,4 +36,5 @@
     {% endfor %}
   </div>
 </div>
+<script src="{{ url_for('static',filename='table.js') }}"></script>
 {% endblock %}
