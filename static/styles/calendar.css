@@ -30,7 +30,13 @@ font-weight: bold;
   font-size: 16px;
 }
 
-
+#myDynamicTable {
+  margin-right: 100px;
+}
+#myDynamicTable td {
+  padding: 10px;
+  margin: 10px;
+}
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;

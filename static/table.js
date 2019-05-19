@@ -9,7 +9,7 @@ function addTable() {
 
 // Create Time:
 var tr = document.createElement('TR');
-tr.style.backgroundColor = "blue"; 
+tr.style.backgroundColor = "gray"; 
 tableBody.appendChild(tr);
 var td = document.createElement('TD');
 td.width = '75';
@@ -22,17 +22,18 @@ for (var j = 0; j < 7; j++) {
 }
 
 
+var time = 9;
+var time2 = 10;
   for (var i = 0; i < 15; i++) {
     var tr = document.createElement('TR');
     tableBody.appendChild(tr);
-
-    var time = "08:00";
-    var time2 = "10:00";
     var td = document.createElement('TD');
     td.width = '75';
-    td.style.backgroundColor = "blue"; 
+    td.style.backgroundColor = "gray"; 
     td.appendChild(document.createTextNode(time + "-" + time2));
     tr.appendChild(td);
+    time++;
+    time2++;
 
     for (var j = 0; j < 7; j++) {
       var td = document.createElement('TD');
