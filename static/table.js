@@ -39,12 +39,7 @@ var time2 = 10;
       var td = document.createElement('TD');
       td.width = '130';
       td.appendChild(document.createTextNode("Cell " + (i+9) + "," + (j+1)));
-      if( (i + j)%7 == 0) {
-        td.style.background = "yellow";
-        td.innerHTML = "Sup"
-      }
-      // td.id = (i+9)+"-"+(j+1);
-      td.id = "Tzvi";
+      td.id = (i+9)+"-"+(j+1);
       tr.appendChild(td);
     }
   }

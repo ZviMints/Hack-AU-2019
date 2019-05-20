@@ -23,7 +23,7 @@
     <a href="#">קורס שפת C++</a>
     <a href="#">הסתברות למדעי המחשב</a>
     <a href="/getcourse/אלגברה לינארית 1">אלגברה לינארית 1</a>
-    <a href="#">מבוא לבטיחות תוכנה</a>
+    <a href="/getcourse/מבוא לבטיחות תוכנה">מבוא לבטיחות תוכנה</a>
     <a href="#">מערכות הפעלה</a>
     <a href="#">אלגורתמים 2 מצטיינים</a>
     </div>
@@ -53,15 +53,18 @@
 
 {% for course in rellist %}
     {% set row = course.split(' , ') %}
+    {% set course_name = row[1] %}
     {% set start_time = row[3].split(':')[0] %}
     {% set end_time = row[4].split(':')[0] %}
+    {% set day = row[6].split(' ')[0] %}
     <script>
-    alert(document.getElementById("Tzvi").innerText);
+      var x = "{{day}}".charCodeAt() - 1487;
+      for(var i={{start_time}}; i<{{end_time}}; i++) {
+        document.getElementById(i+"-"+x+"").innerHTML = "{{ row[1] }}";
+        document.getElementById(i+"-"+x+"").style.background = "yellow";
+      }
+    
     </script>
-    {{ start_time }}
-    {{ end_time }}
-    {{ row[6] }}
-
 {% endfor %}
 
 {% endblock %}
