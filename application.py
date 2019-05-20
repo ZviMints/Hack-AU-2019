@@ -41,3 +41,20 @@ def database():
       list.append(c)
       listofstrings.append(c.myfunc())
    return render_template('database.html', list=listofstrings)
+
+@app.route("/getcourse/<string:id>")
+def getcourse(id):
+   list = []
+   listofstrings = []
+   mydb = mysql.connector.connect(user="team", password="aA12345678!", host="SG-HackAU-634-master.servers.mongodirector.com",
+   port=3306, database="hackau",collation='utf8_general_ci',use_unicode=True, charset='utf8')
+   mycursor =  mydb.cursor()
+   mycursor.execute("SELECT Name_Lecturer, courses.Name_Courses, courses.Course_ID, "+"Time_Begin, Time_End ,courses.Credits ,semester,day from lectures INNER JOIN courses on lectures.Course_ID = courses.Course_ID where department = 'מדעי המחשב' and (Name_Courses='{}' or Name_Courses='{}-תרגיל');".format(id,id))
+   myresult = mycursor.fetchall()
+   for row in myresult:
+      # print(u'{} {} {} {} {} ({}'.format(*i[:]))
+      c = course.course(u'{}'.format(row[0]),u'{}'.format(row[1]),row[2],row[3],row[4],row[5],row[6])
+      list.append(c)
+      listofstrings.append(c.myfunc())
+   return render_template('main.html', rellist=listofstrings)
+

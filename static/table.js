@@ -12,11 +12,11 @@ var tr = document.createElement('TR');
 tr.style.backgroundColor = "gray"; 
 tableBody.appendChild(tr);
 var td = document.createElement('TD');
-td.width = '75';
+td.width = '130';
 tr.appendChild(td);
 for (var j = 0; j < 7; j++) {
   var td = document.createElement('TD');
-  td.width = '75';
+  td.width = '130';
   td.appendChild(document.createTextNode("יום" + "-" + (j+1)));
   tr.appendChild(td);
 }
@@ -28,7 +28,7 @@ var time2 = 10;
     var tr = document.createElement('TR');
     tableBody.appendChild(tr);
     var td = document.createElement('TD');
-    td.width = '75';
+    td.width = '130';
     td.style.backgroundColor = "gray"; 
     td.appendChild(document.createTextNode(time + "-" + time2));
     tr.appendChild(td);
@@ -37,9 +37,14 @@ var time2 = 10;
 
     for (var j = 0; j < 7; j++) {
       var td = document.createElement('TD');
-      td.width = '75';
-      td.appendChild(document.createTextNode("Cell " + i + "," + j));
-      td.id = i+","+j;
+      td.width = '130';
+      td.appendChild(document.createTextNode("Cell " + (i+9) + "," + (j+1)));
+      if( (i + j)%7 == 0) {
+        td.style.background = "yellow";
+        td.innerHTML = "Sup"
+      }
+      // td.id = (i+9)+"-"+(j+1);
+      td.id = "Tzvi";
       tr.appendChild(td);
     }
   }

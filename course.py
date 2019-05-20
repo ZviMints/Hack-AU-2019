@@ -9,7 +9,7 @@ class course:
         self.day=day
 
     def myfunc(self):
-        return "(" + self.teacherName + " , " + self.courseName + " , " + self.courseCode + " , " + str(self.Time_begin) + " , " + str(self.Time_end) + " , " + str(self.points) + " , " + self.day +")"
+        return self.teacherName + " , " + self.courseName + " , " + self.courseCode + " , " + str(self.Time_begin) + " , " + str(self.Time_end) + " , " + str(self.points) + " , " + self.day
 
 
 

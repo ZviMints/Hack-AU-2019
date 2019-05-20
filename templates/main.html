@@ -2,14 +2,14 @@
 {% block content %}
 <div id="greet">
 ברוכים הבאים, {{ email }}. <br>
-<b>צהריים טובים</b>
+<b>בוקר טוב</b>
 </div>
 <nav class="navbar navbar-light bg-light">
         <form class="form-inline" action="/create">
           <button class="btn btn-outline-success" type="submit">יצירת מערכת מותאמת אישית</button>
         </form>
         <form>
-          <div id="nextprev">
+        <div id="nextprev">
                 <button type="button" class="btn btn-primary">מערכת קודמת</button>
                 <button type="button" class="btn btn-primary">מערכת הבאה</button>
           </div>
@@ -17,6 +17,18 @@
 </nav>
 <div class="main">
 <span id="title">מערכת שעות</span>
+<div class="dropdown">
+    <button class="dropbtn">בחר קורס</button>
+    <div class="dropdown-content">
+    <a href="#">קורס שפת C++</a>
+    <a href="#">הסתברות למדעי המחשב</a>
+    <a href="/getcourse/אלגברה לינארית 1">אלגברה לינארית 1</a>
+    <a href="#">מבוא לבטיחות תוכנה</a>
+    <a href="#">מערכות הפעלה</a>
+    <a href="#">אלגורתמים 2 מצטיינים</a>
+    </div>
+  </div>
+
 <div id="myDynamicTable"></div>
 </div>
 <div class="alert alert-primary" role="alert">
@@ -36,6 +48,21 @@
     {% endfor %}
   </div>
 </div>
-<a href="./database">רשימת כל הקורסים</a>
+<a href="/database">רשימת כל הקורסים</a>
 <script src="{{ url_for('static',filename='table.js') }}"></script>
+
+{% for course in rellist %}
+    {% set row = course.split(' , ') %}
+    {% set start_time = row[3].split(':')[0] %}
+    {% set end_time = row[4].split(':')[0] %}
+    <script>
+    alert(document.getElementById("Tzvi").innerText);
+    </script>
+    {{ start_time }}
+    {{ end_time }}
+    {{ row[6] }}
+
+{% endfor %}
+
 {% endblock %}
+
